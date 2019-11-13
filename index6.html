@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+    <script src="https://unpkg.com/react@16/umd/react.
+development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.
+development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/
+babel.min.js"></script>
+
+    <style>
+        #container {
+            padding: 50px;
+            background-color: #FFF;
+        }
+    </style>
+
+</head>
+<body>
+<div id="container"></div>
+<script type="text/babel">
+
+    class Items extends React.Component {
+        render() {
+            return (
+                <React.Fragment>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </React.Fragment>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <div>
+            <Items />
+        </div>,
+        document.querySelector("#container")
+    );
+
+</script>
+</body>
+</html>
